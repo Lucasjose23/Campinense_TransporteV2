@@ -127,6 +127,8 @@ nav ul#menu-desktop li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  object-fit: cover;/*nao acontece distorcao fill=preenche e distorce,contain=sempre atinge o limite(contendo),cover=acompanha o container sem distorcer,scale-down=nao crece, mais diminui*/
+  object-position: top center;
   z-index: -2;
 
   
@@ -366,8 +368,9 @@ nav ul#menu-mobile li a {
   display: none;
 }
 .banner img{
-  background-position: cover;
+  height: 900px;
 }
+
 
 #servico-desktop {
   
@@ -394,6 +397,8 @@ nav ul#menu-mobile li a {
  
    top: 1000px;
   padding:30px;
+  text-align: center;
+
 
 
 }
@@ -447,12 +452,16 @@ nav ul#menu-mobile li a {
 }
 .texto img{
   position:relative;
-  top:930px;
-  left: 120px;
-  height: 300px;
+  top:950px;
+  left: 100px;
+  height: 200px;
   z-index: -1;
   
 
+}
+.footer {
+  height: 450px;
+  top:1900px;
 }
 .footer ul{
   color: rgb(172, 172, 172);
