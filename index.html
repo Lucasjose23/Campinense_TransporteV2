@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Campinense Transporte</title>
+
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+<!-- Última versão CSS compilada e minificada -->
+<link rel="shortcut icon" href="./imagens/logo.png" type="image/x-icon">
+<link rel="icon" href="./imagens/logo.png" type="image/x-icon">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+jQuery(document).ready(function($) {  
+
+// site preloader -- also uncomment the div in the header and the css style for #preloader
+
+$(window).load(function(){
+	$('#preloader').fadeOut('slow',function(){$(this).remove();});
+
+});
+
+});
+
+$(window).scroll(function() {
+    var x = $(this).scrollTop();
+
+    if(x>300){
+      $('#servico-desktop').css('animation', '2s ease-out 0s 1 slideInFromLeft' );
+	  $('#servico-mobile').css('animation', '2s ease-out 0s 1 slideInFromLeft' );
+    
+    } 
+	if(x>600){
+		$('#clientes').css('animation', '2s ease-out 0s 1 slideInFromLeft' );
+
+	}
+	if(x>900){
+		$('.paragrafo').css('animation', '2s ease-out 0s 1 slideInFromLeft' );
+		$('#imagen-texto').css('animation', '2s ease-out 0s 1 slideInFromRight' );
+
+	}
+	if(x>1200){
+		$('#footer-ul').css('animation', '2s ease-out 0s 1 slideInFromBotton' );
+	}
+
+	
+    
+});
+$(function() {
+                $("div#menu-btn").click(function() {
+                    $("nav ul#menu-mobile").toggle();
+                });
+                
+                $(window).resize(function() {
+                   var largura = $(window).width(); 
+                    if ( largura >= 701 ) {
+                        $("nav ul#menu-mobile").hide();   
+                    }
+                });
+            });
+
+</script>
+
+</head>
+
+
+<body >
+		<div id="preloader">
+			<h2>CARREGANDO</h2>
+		
+		</div>
+
+<nav id="menudesktop">
+		<img src="./img/iconemenu.png">
+		<ul id="menu-desktop">
+			<li><a href="">HOME</a></li>
+			<li><a href="">CAMPINENSE</a></li>
+			<li><a href="#serv">SERVIÇOS</a></li>
+			<li><a href="">O QUE LEVAMOS</a></li>
+			<li><a href="#cli">CLIENTES</a></li>
+			<li><a href="">BLOG</a></li>
+			<li><a href="#cont">CONTATO</a></li>
+		</ul> 
+
+		<ul id="menu-mobile">
+				<li><a href="">HOME</a></li>
+				<li><a href="">CAMPINENSE</a></li>
+				<li><a href="#serv">SERVIÇOS</a></li>
+				<li><a href="">O QUE LEVAMOS</a></li>
+				<li><a href="#cli">CLIENTES</a></li>
+				<li><a href="">BLOG</a></li>
+				<li><a href="#cont">CONTATO</a></li>
+			</ul> 
+			<div id="menu-btn">
+					<svg width="30" height="30">
+						<path d="M0,5 30,5"     stroke="#fff" stroke-width="4"/>
+						<path d="M0,15 30,15"   stroke="#fff" stroke-width="4"/>
+						<path d="M0,25 30,25"   stroke="#fff" stroke-width="4"/>
+					</svg>
+				</div>           
+		
+		
+</nav>
+	<div class="banner">
+			<p>A<strong> CONFIANÇA</strong></br>  NECESSÁRIA PARA A</br> SUA <strong>CARGA, VOCÊ</br>  ENCONTRA AQUI!</strong></p>
+		<img src="./img/imagem banner.png">
+		
+
+	</div>
+	
+<div class="imagen_corpo">
+		<img src="./img/fundo.png" >
+</div>
+
+<div class="borda">
+
+</div>
+
+<div class="servicos" id="serv">
+	
+		<h2>SERVIÇOS</h2>
+		
+		
+				
+					<ul id="servico-desktop"  >
+						<li ><p><img src="./img/icone 01.png"></br> <strong>CONHEÇA</br> NOSSA FROTA</strong</p></li>
+						<li><p><img src="./img/icone 02.png"></br><strong>COTAÇÃO DE</br> FRETE ONLINE</strong</p></li>
+						<li ><p><img src="./img/icone 03.png"></br><strong>SEGURO</br> DE CARGAS</strong</p></li>
+						<li><p><img src="./img/icone 04.png"></br><strong>RASTREAMENTO</br> DE CARGAS</strong</p></li>
+					</ul>
+					<ul id="servico-mobile">
+								
+								<li><p><img src="./img/icone 01.png"><strong> CONHEÇA NOSSA FROTA</strong</p></li>
+								<li><p><img src="./img/icone 02.png"><strong> COTAÇÃO DE FRETE ONLINE</strong</p></li>
+								<li ><p><img src="./img/icone 03.png"><strong> SEGURO DE CARGAS</strong</p></li>
+								<li><p><img src="./img/icone 04.png"><strong> RASTREAMENTO DE CARGAS</strong</P></li>
+					</ul> 
+
+		
+</div>
+<div class="clientes" id="cli">
+	<h2>CLIENTES</h2>
+	<img src="./img/marcas.png" id="clientes">
+
+
+</div>
+<div class="texto">  
+	<h2 class="paragrafo">A CAMPINENSE É TOP DO TRANSPORTE 2018</h2>
+	<p class="paragrafo">À memória do nosso fundador, Francisco Vieira de Andrade, cujo legado </br> pavimentou nossa estrada, pela excelência demonstrada em seu caráter,</br> primando sempre pela qualidade, na direção de nossos serviços.</br>
+</br>Somos gratos a Deus, pelo seu grande amor derramado em nossos</br> corações e a cada cliente e colaborador que tem nos auxiliado a</br> construir os 47 anos de história da família Campinense.</p>
+	<img src="./imagens/foto.png" id="imagen-texto">
+
+</div>
+
+<div class="footer" id="cont">
+		<div id="footer-ul">
+			<ul >
+					<li><p><strong>Campinense Transporte</strong> </p></li>
+					<li><p>Campina Grande-PB (83)3182-3400</br>João Pessoa-PB (83)3048-3600</br>São Paulo-SP (11)2193-4777</p></li>
+					<li><p>Recife-PE (81)3974-5454</br>Caruaru-Pe (81)3721-1267</br>Serra(Grande Vitória) (27)3338-9030</p></li>
+			</ul>
+		</div>
+ </div>
+
+
+
+
+</body>
+</html>
